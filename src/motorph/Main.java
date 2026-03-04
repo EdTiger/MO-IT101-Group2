@@ -2,7 +2,8 @@ package motorph;
 
 /*
  * ============================================================
- * MotorPH Payroll System
+ * MotorPH Basic Payroll System (Milestone 2: Initial Code Submission)
+ * Developed by ByteBeans
  * ============================================================
  *
  * Purpose:
@@ -30,8 +31,6 @@ package motorph;
  *   - Two cutoff periods per month: 1st (days 1–15), 2nd (days 16–end)
  *   - Government deductions computed on combined monthly gross pay
  *   - Late arrivals reduce hours worked (no separate penalty amount)
- *
- * Tasks Covered: 5, 6, 7, 8, 9, 10
  * ============================================================
  */
 
