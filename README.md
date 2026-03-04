@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🛠️ Basic Payroll System (Phase 1)
+# Basic Payroll System (Phase 1)
 
 </div>
 
@@ -30,7 +30,3 @@ This project is developed exclusively in Java. Ensure the local environment matc
 This phase of the MotorPH Basic Payroll System was developed by **ByteBeans**.
 
 ***
-
-<div align="center">
-<i>Developed for the MotorPH Payroll System</i>
-</div>
