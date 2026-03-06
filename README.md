@@ -91,9 +91,10 @@ This project is the result of teamwork, collective problem-solving, and the shar
 <div align="center">
 
 **Expeditus Yntig**  
+**Rey Manuel Oljol**  
 **Angel Rhyne Hangad**  
 **Jeana Karyll Esteron**
-**Rey Manuel Oljol**  
+
 
 </div>
 
