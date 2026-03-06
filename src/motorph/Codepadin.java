@@ -324,7 +324,7 @@ public class Codepadin {
                 }
             }
         }
-
+//Comment ito for example. Sample Sample
         scanner.close();
     }
 }
