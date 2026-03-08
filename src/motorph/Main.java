@@ -5,7 +5,7 @@ import java.io.*;      // allows reading files like CSV
 import java.util.*;    // allows using Scanner
 
 
-public class MotorPH_Payroll_System_Group2_ByteBeans {
+public class Main {
 
     /**
      * MotorPH Simple Payroll System
