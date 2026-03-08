@@ -6,6 +6,17 @@ The **MotorPH Basic Payroll System** is a console-based Java application develop
 
 ---
 
+## Team Details
+
+### ByteBeans Development Team
+
+- **Expeditus Yntig**
+- **Rey Manuel Oljol**
+- **Angel Rhyne Hangad**
+- **Jeana Karyll Esteron**
+
+---
+
 ## Program Details
 
 The system begins with a **login screen** that determines the user's role. Depending on the credentials entered, the user is directed to either the Employee menu or the Payroll Staff menu.
@@ -47,6 +58,12 @@ Daily hours worked are calculated by converting the time-in and time-out values 
 
 ---
 
+## Project Plan Link
+
+[View Project Plan on Google Sheets](https://docs.google.com/spreadsheets/d/1FF1jRVCnI0Zv32z_0VOuM7BB6sGdVNDUTtjyJr_Z7lg/edit?gid=2134013708#gid=2134013708)
+
+---
+
 ## Technologies Used
 
 | Component       | Details                          |
@@ -56,25 +73,6 @@ Daily hours worked are calculated by converting the time-in and time-out values 
 | JVM             | Java HotSpot(TM) 64-Bit Server  |
 | Data Source     | CSV files (employees, attendance)|
 | Version Control | Git & GitHub                     |
-
----
-
-## Team Details
-
-### ByteBeans Development Team
-
-| Team Member              | Contribution |
-|--------------------------|--------------|
-| **Expeditus Yntig**      | *(fill in)*  |
-| **Rey Manuel Oljol**     | *(fill in)*  |
-| **Angel Rhyne Hangad**   | *(fill in)*  |
-| **Jeana Karyll Esteron** | *(fill in)*  |
-
----
-
-## Project Plan Link
-
-[View Project Plan on Google Sheets](https://docs.google.com/spreadsheets/d/1FF1jRVCnI0Zv32z_0VOuM7BB6sGdVNDUTtjyJr_Z7lg/edit?gid=2134013708#gid=2134013708)
 
 ---
 
