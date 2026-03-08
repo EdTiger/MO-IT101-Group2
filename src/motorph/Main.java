@@ -411,13 +411,18 @@ public class Main {
                    
                     //____________________________________
                     // PhilHealth Contribution Computation 
-                    double philHealth = gross;
+                            double monthlyPremium;
 
-                    if (philHealth < 10000) philHealth = 10000;
-                    if (philHealth > 60000) philHealth = 60000;
-
-                    double monthlyPremiumRate = philHealth * 0.03;
-                    double phil = monthlyPremiumRate / 2;
+                    if (gross <= 10000) {
+                    monthlyPremium = 300;        // minimum premium
+                    }
+                    else if (gross >= 60000) {
+                    monthlyPremium = 1800;       // maximum premium
+                    }
+                    else {
+                    monthlyPremium = gross * 0.03;   // 3% of salary
+                    }
+                    double phil = monthlyPremium / 2; // employee share is 50%
 
                     //_________________________________
                     // Pagibig Contribution Computation 
