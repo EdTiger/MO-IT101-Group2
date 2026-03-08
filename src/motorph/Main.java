@@ -15,7 +15,7 @@ public class Main {
         // Scanner for user input
         Scanner scanner = new Scanner(System.in);
 
-        // System header
+        // Display system title
         System.out.println("=================================");
         System.out.println("                                 ");
         System.out.println("             MotorPH             ");
@@ -27,17 +27,18 @@ public class Main {
         // LOGIN SECTION
         // =============================
 
+        //Ask user for login credentials
         System.out.print("Username: ");
         String username = scanner.nextLine(); // read username
 
         System.out.print("Password: ");
         String password = scanner.nextLine(); // read password
 
-        // check if login is payroll staff
+        // check if user is payroll staff
         boolean payrollStaff =
                 username.equals("payroll_staff") && password.equals("12345");
 
-        // check if login is employee
+        // check if user is employee
         boolean employee =
                 username.equals("employee") && password.equals("12345");
 
@@ -63,13 +64,13 @@ public class Main {
 
         if (employee) {
 
-            // employee menu
+            // employee choices
             System.out.println("\n1 Enter employee number");
             System.out.println("2 Exit");
 
-            int choice = Integer.parseInt(scanner.nextLine());
+            int choice = Integer.parseInt(scanner.nextLine()); //scanner.nextLine() reads user input as TEXT (String)
             
-//             scanner.nextLine() reads user input as TEXT (String)
+
 //             but we need a NUMBER for menu selection.
 //
 //             Integer.parseInt() converts the text into an integer.
@@ -184,6 +185,8 @@ public class Main {
 
             empInfo.readLine(); // skip header
 
+            boolean found = false;
+
             while ((line = empInfo.readLine()) != null) {
 
                 String[] empdata = line.split(",");
@@ -206,7 +209,10 @@ public class Main {
 
                     break;
                 }
-            }
+         }
+            if(!found){
+                    System.out.println("Employee number does not exist");
+            }   
 
             empInfo.close();
 
