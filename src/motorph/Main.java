@@ -363,6 +363,8 @@ public class Main {
                     // SSS Contribution Computation 
                     double sss = 0;
 
+                    // If the employee's gross salary falls within a range,
+                    // asssign the corressponding SSS contribution.
                     if (gross <= 3250) sss = 135;
                     else if (gross <= 3750) sss = 157.5;
                     else if (gross <= 4250) sss = 180;
@@ -428,12 +430,13 @@ public class Main {
                     // Pagibig Contribution Computation 
                     double pagibig; 
 
-                    if (gross >= 1000 && gross <= 1500)
-                        pagibig = gross * 0.01;
+                    if (gross >= 1000 && gross <= 1500) // If salary is between 1,000 and 1,500
+                        pagibig = gross * 0.01;         // employee contribution 1% of salary
                     else
-                        pagibig = gross * 0.02;
-
-                    if (pagibig > 100)
+                        pagibig = gross * 0.02;         // If salary is greater than 1,500
+                                                        // employee contributes 2% of salary
+                     
+                    if (pagibig > 100)                  // Pag-IBIG contribution hs a maximum cap of 100
                         pagibig = 100;
 
                     
@@ -444,18 +447,18 @@ public class Main {
                     // Tax Contribution Computation 
                     double tax = 0;
 
-                    if (taxableIncome <= 20832)
-                        tax = 0;
-                    else if (taxableIncome < 33333)
+                    if (taxableIncome <= 20832)                             // 20,832 and below = no tax
+                        tax = 0;                                           
+                    else if (taxableIncome < 33333)                         // 20,833 - 33,333 = 20% of excess over 20,833
                         tax = (taxableIncome - 20833) * 0.20;
-                    else if (taxableIncome < 66667)
-                        tax = 2500 + (taxableIncome - 33333) * 0.25;
-                    else if (taxableIncome < 166667)
+                    else if (taxableIncome < 66667)                         // 33,333 - 66,667 = 2500 + 25& excess over 33,333
+                        tax = 2500 + (taxableIncome - 33333) * 0.25; 
+                    else if (taxableIncome < 166667)                        // 66,667 - 166,667 = 10,833 + 30% excess over 66,667
                         tax = 10833 + (taxableIncome - 66667) * 0.30;
-                    else if (taxableIncome < 666667)
+                    else if (taxableIncome < 666667)                        // 166,667 - 666,667 = 40,833.33 + 32% excess
                         tax = 40833.33 + (taxableIncome - 166667) * 0.32;
                     else
-                        tax = 200833.33 + (taxableIncome - 666667) * 0.35;
+                        tax = 200833.33 + (taxableIncome - 666667) * 0.35;  // 666,667 and above = 200,833.33 + 35% excess
 
                     double totalDeduction = sss + phil + pagibig + tax; // Total deductions
                     double net = gross - totalDeduction;                // Net salary after deductions
