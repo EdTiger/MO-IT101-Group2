@@ -340,7 +340,7 @@ public class Main {
                     else if (gross <= 3750) sss = 157.5;
                     else if (gross <= 4250) sss = 180;
                     else if (gross <= 4750) sss = 202.5;
-                    else if (gross <= 5250) sss = 224;
+                    else if (gross <= 5250) sss = 225;
                     else if (gross <= 5750) sss = 247.5;
                     else if (gross <= 6250) sss = 270;
                     else if (gross <= 6750) sss = 292.5;
@@ -380,8 +380,8 @@ public class Main {
                     else if (gross <= 23750) sss = 1057.5;
                     else if (gross <= 24250) sss = 1080;
                     else if (gross <= 24750) sss = 1102.5;
-                    else sss = 1125;
-
+                    else if (gross >= 24750) sss = 1125;
+                   
                     // PhilHealth computation
                     double philHealth = gross;
 
