@@ -65,8 +65,8 @@ public class Main {
 
             System.out.println("------------------------------------");
             System.out.println("                                    ");
-            System.out.println("             LOGIN FAILED           ");
-            System.out.println("       _______________________      ");
+            System.out.println("            LOGIN FAILED            ");
+            System.out.println("      ________________________      ");
             System.out.println("                                    ");
             System.out.println( "Incorrect username and/or password" );
             System.out.println("          Please try again.         ");
