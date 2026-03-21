@@ -89,3 +89,4 @@ Daily hours worked are calculated by converting the time-in and time-out values 
 |----------------|------------------|----------|
 | Employee       | `employee`       | `12345`  |
 | Payroll Staff  | `payroll_staff`  | `12345`  |
+
