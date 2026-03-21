@@ -149,7 +149,7 @@ public class Main {
             try {
             BufferedReader empInfo = new BufferedReader(new FileReader("employees.csv")); // open employees.csv file
             empInfo.readLine(); // skip header   
-            String line; // Varible that stores each row of the file
+            String line; // Variable that stores each row of the file
                     
                     // Read every employee in the file
                     while ((line = empInfo.readLine()) != null) {
