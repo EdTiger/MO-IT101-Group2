@@ -228,7 +228,7 @@ public class Main {
         try {
             BufferedReader employeeInfo = new BufferedReader(new FileReader("employees.csv"));
             employeeInfo.readLine();
-            String line;
+            String recordLine;
 
             // Employee information variables
             String firstName = ""; // employee first name
