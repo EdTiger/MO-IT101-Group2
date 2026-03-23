@@ -372,6 +372,9 @@ public class Main {
                     double grossSalary1 = firstCutoff * hourlyRate;
 
                     // This section displays the payroll breakdown for the first cutoff.
+                    // TextStyle.FULL displays the complete month name (e.g., "June" instead of "Jun").
+                    // Locale.ENGLISH ensures the month name is displayed in English regardless of system language.
+                    // Month.of(month) converts the month number into a Month object, then getDisplayName() returns its full English name.
                     System.out.println("\nCutoff Date: " + Month.of(month).getDisplayName(TextStyle.FULL, Locale.ENGLISH) + " 1 to 15 2024");
                     System.out.println("Total Hours: " + firstCutoff + " Hours");
                     System.out.println("Gross Salary: PHP " + grossSalary1);
@@ -390,6 +393,8 @@ public class Main {
                     double net = grossSalary2 - totalDeduction;
 
                     // This section displays the payroll breakdown for the second cutoff.
+                    // YearMonth.of(2024, month).lengthOfMonth() automatically returns the correct last day,
+                    // including leap year adjustments (e.g., February 2024 returns 29 instead of 28).
                     System.out.println("\nCutoff Date: " + Month.of(month).getDisplayName(TextStyle.FULL, Locale.ENGLISH) + " 16 to " + YearMonth.of(2024, month).lengthOfMonth() + " 2024");
                     System.out.println("Total Hours: " + secondCutoff + " Hours");
                     System.out.println("Gross Salary: PHP " + grossSalary2);
